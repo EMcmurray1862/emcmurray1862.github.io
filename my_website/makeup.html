@@ -1,35 +1,159 @@
-<!doctype html>
-	<html lang="en">
-	  <head>
-	    <meta charset="utf-8">
-	    <title>Makeup</title>
-	  </head>
-	  <body style="background-color:honeydew;">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    padding: 20px;
+    font-family: Palatino;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+/* Center website */
+.main {
+    max-width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+     text-align: center;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+  <body>
     <a href="index.html">Home</a>
     <a href="portfolio.html">Portfolio</a>
-    <a href="about_me.html">About </a>
-    <a href="makeup.html">MakeUp </a>
-    <h1>This is my MakeUp Page!</h1>
-      <p>I first started doing eyeshadow looks around Christmas 2017 when I got my first Morphe palette. Since then, my collection has grown, and so has my skill. These looks are some of my favorite looks.</p></p>
-      <p>January 20, 2019</p>
-    <img src="images/brown_cutcrease.jpg" height="250">
-      <p>January 30, 2019</p>
-    <img src="images/rainbow_cutcrease.jpg" height="250">
-    <p>February 14, 2019</p>
-    <img src="images/valentines_look.jpg" height="250">
-    <p>August 2, 2019</p>
-    <img src="images/yellow_cutcrease.jpg" height="250">
-    <p>August 23, 2019</p>
-    <img src="images/purple_yellow_fair.jpg" height="250">
-    <p>August 30, 2019</p>
-    <img src="images/blue_cutcrease.jpg" height="250">
-    <p>September 6, 2019</p>
-    <img src="images/purple_blue_glitter.jpg" height="250">
-    <img src="images/green_glitter.jpg" height="250">
-    <p>September 13, 2019</p>
-    <img src="images/red_black.jpg" height="250">
-    <br>
-    <a target="_blank" href="https://scratch.mit.edu">
-    </a>
-	  </body>
-	</html>
+    <a href="about.html">About</a>
+    <a href="makeup.html">MakeUp</a>
+  <body style="background-color:powderblue;">
+  <h1>Portfolio</h1>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="images/brown_cutcrease.jpg" style="width:100%" "length:100%">
+      <h3>January 20, 2019 </h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/rainbow_cutcrease.jpg" style="width:100%" "length:100%">
+      <h3>January 30, 2019 </h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/valentines_look.jpg" style="width:100%" "length:100%">
+       <h3>February 14, 2019 </h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/yellow_cutcrease.jpg" style="width:100%" "length:100%">
+      <h3>August 2, 2019 </h3>
+     </div>
+  </div>
+   <div class="column">
+    <div class="content">
+    <img src="images/purple_yellow_fair.jpg" style="width:100%" "length:100%">
+      <h3>August 23, 2019</h3>
+      </div>
+  </div>
+  <div class="column">
+   <div class="content">
+    <img src="images/blue_cutcrease.jpg" style="width:100%" "length:100%">
+      <h3>August 30, 2019</h3>
+      </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/purple_blue_glitter.jpg" style="width:100%" "length:100%">
+      <h3>September 6, 2019</h3>
+      </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/green_glitter.jpg" style="width:100%" "length:100%">
+      <h3>September 6, 2019</h3>
+          </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  
+  <a target="_blank" href="">
+  <img src="images/waluigi_emote.png" style="width:100%">
+  <h3"'Waah' - Waluigi"</h3>
+</div>
+
+<!-- END MAIN -->
+</div>
+</body>
+</html>
